@@ -1,0 +1,80 @@
+
+body{
+    position: relative;
+    margin: 0;
+    box-sizing: inherit;
+}
+html{
+    box-sizing: border-box;
+}
+ul li {
+    list-style: none;
+    
+}
+#left img{
+    border-radius: 20px;
+    width: 400px;
+    cursor: pointer;
+}
+
+.Footer{
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
+    background-color: rgb(124, 51, 24);
+    color: aliceblue;
+    border-radius: 5px;
+    /* margin-top: -100px; */
+
+   
+}
+
+#middle a{
+    text-decoration: none;
+    /* padding-bottom: 50px; */
+    color: aliceblue;
+}
+
+
+
+#right{
+    text-align: center;
+    text-decoration: none;
+}
+
+#right a{
+    font-size: 18px;
+    text-decoration: none;
+    color: aliceblue;
+}
+
+@media (max-width: 575px) {
+    /* Adjust the footer styles for small screens */
+    .Footer {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        gap: 1000px;
+        /* Add styles for small screens here */
+    }
+    .row{
+        display: flex;
+        flex-direction: column;
+    }
+    #right{
+        display: none;
+       
+    }
+    #left{
+        text-align: center;
+        color:  rgb(250, 250, 250);
+    }
+   #middle{
+    text-align: center;
+   }
+   #left img{
+    border-radius: 20px;
+    width: 70%;
+    cursor: pointer;
+}
+}

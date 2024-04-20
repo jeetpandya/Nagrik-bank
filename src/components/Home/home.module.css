@@ -1,0 +1,133 @@
+
+
+/* You can add more styles as needed */
+
+.sect {
+  color: "black";
+  padding: 40px;
+  margin: 40px;
+  display: flex;
+  flex-direction: row;
+  gap: 160px;
+  margin-bottom: 50px;
+  background-image: url("./images/25100.jpg");
+  border-radius: 30px;
+}
+.body {
+  background-color: #d4e0ea;
+  padding-bottom: 20px;
+}
+
+.text {
+  width: 60%;
+}
+.text h2 {
+  color: #0059a1;
+  font-size: 35px;
+}
+
+.info {
+  color: black;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 30px;
+  gap: 20px;
+  z-index: -11;
+}
+.info h4{
+  color: black;
+}
+.info p {
+  color: #a10038;
+  font-size: 32px;
+}
+.slides {
+  width: 25%;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+}
+
+.slides img {
+  height: 450px;
+  border-radius: 30px;
+  z-index: -1;
+}
+
+.imageContainer {
+  position: fixed;
+  animation: blink 1s ease-in-out; /* Add blink animation */
+  z-index: 100;
+  margin-top: 20px;
+  height: 100% ;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.imageContainer img{
+  position: absolute;
+  width: 550px;
+  height: 550px;
+  top: 42%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index:1; 
+}
+.pos{
+  position: relative;
+}
+.closebtn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+  padding: 8px;
+  font-size: 16px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  z-index: 2; /* Ensure the button is above the image */
+}
+
+/* @keyframes blink {
+  0% { opacity: 0; }
+  50% { opacity: 1; }
+  100% { opacity: 0; }
+} */
+
+
+@media (max-width: 975px) {
+  .sect {
+    flex-direction: column;
+    padding: 20px;
+  }
+  .text {
+    width: 100%;
+    margin-bottom: -170px;
+  }
+  .sect {
+    margin-bottom: 30px;
+  }
+  .slides {
+    width: 100%;
+  }
+  .slides img {
+    width: 100%;
+    height: 350px;
+  }
+  .imageContainer{
+    width: 100%;
+  }  
+
+  .imageContainer img{
+    width: 90%;
+  }
+
+}
